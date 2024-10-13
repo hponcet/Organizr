@@ -16568,7 +16568,6 @@ function organizrCatchError(e, data) {
       '</h4><p><mark lang="en">Trace Log has been outputted to Browser Console</mark></p><h5 lang="en">Output of last API call</h5>' +
       formatDebug(data)
   );
-  console.trace();
   return false;
 }
 function OrganizrApiError(xhr, secondaryMessage = null) {
@@ -16595,7 +16594,6 @@ function OrganizrApiError(xhr, secondaryMessage = null) {
         "10000"
       );
     }
-    console.trace();
   }
   return false;
 }
