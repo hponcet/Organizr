@@ -33,6 +33,8 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 
+node_modules
+
 # Thumbnails
 ._*
 

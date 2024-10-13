@@ -2,16 +2,12 @@ import { PonponMenu } from "PonponMenu";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-export function mount(el: HTMLDivElement) {
-  const root = ReactDOM.createRoot(el);
+const root = ReactDOM.createRoot(
+  document.getElementById("ponponMenu") as HTMLElement
+);
 
-  root.render(
-    <React.StrictMode>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      />
-      <PonponMenu />
-    </React.StrictMode>
-  );
-}
+root.render(
+  <React.StrictMode>
+    <PonponMenu />
+  </React.StrictMode>
+);
