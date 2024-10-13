@@ -3954,10 +3954,6 @@ function accountManager(user) {
   }
 }
 function userMenu(user) {
-  console.log("yolo", user);
-
-  if (user) return;
-
   $("body").attr("data-active-user-group-name", user.data.user.group);
   $("body").attr("data-active-user-group-id", user.data.user.groupID);
 
@@ -16857,6 +16853,53 @@ function launch() {
           style: json.data.style,
           version: json.data.version,
         };
+
+        console.log(
+          `
+            
+            
+            
+            
+            
+            
+            
+            
+            user:
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            `,
+          activeInfo,
+          `
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                `
+        );
+
         // Add element to signal activeInfo Ready
         $("#wrapper").after('<div id="activeInfo"></div>');
         console.info(
