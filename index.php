@@ -186,6 +186,7 @@ $Organizr = new Organizr(true);
     <button id="internal-clipboard" class="hidden"></button>
 	<?php echo $Organizr->inconspicuous(); ?>
 </div>
+<div id="ponponMenu"></div>
 <!-- /#wrapper -->
 <!-- jQuery -->
 <!--<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>-->
@@ -197,6 +198,7 @@ $Organizr = new Organizr(true);
 <script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
 <script src="js/jquery.slimscroll.js"></script>
 <script src="js/waves.js"></script>
+<script src="ponponMenu/index.js"></script>
 <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 <script src="plugins/bower_components/moment/moment.js"></script>
 <script src="plugins/bower_components/moment/moment-timezone.js"></script>

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "baseUrl": "src",
+    "rootDir": ".",
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "target": "ES2017",
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"],
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+    "types": ["node"],
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types"],
+    "resolveJsonModule": true,
+    "outDir": "build",
+    "paths": {
+      "react": ["./node_modules/@types/react"]
+    }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
+}
