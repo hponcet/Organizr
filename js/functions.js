@@ -3956,6 +3956,9 @@ function accountManager(user) {
 function userMenu(user) {
   $("body").attr("data-active-user-group-name", user.data.user.group);
   $("body").attr("data-active-user-group-id", user.data.user.groupID);
+
+  console.log("yolo", user);
+
   var sideMenu = "";
   var menuList = "";
   var showDebug = activeInfo.settings.misc.debugArea
