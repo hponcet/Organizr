@@ -3954,10 +3954,12 @@ function accountManager(user) {
   }
 }
 function userMenu(user) {
+  console.log("yolo", user);
+
+  if (user) return;
+
   $("body").attr("data-active-user-group-name", user.data.user.group);
   $("body").attr("data-active-user-group-id", user.data.user.groupID);
-
-  console.log("yolo", user);
 
   var sideMenu = "";
   var menuList = "";
