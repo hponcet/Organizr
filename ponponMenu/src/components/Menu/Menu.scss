@@ -1,0 +1,17 @@
+/* stylelint-disable selector-class-pattern */
+.app-menu-dropdown {
+  background-color: #4a4a4a !important;
+  border-radius: 3px;
+
+  * {
+    color: #ffffff !important;
+    font-size: 16px;
+  }
+}
+
+.app-menu-popover {
+  &.rs-popover[class*="placement-top"] > .rs-popover-arrow::after {
+    border-top-color: #4a4a4a !important;
+    right: 5px;
+  }
+}

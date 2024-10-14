@@ -1,0 +1,61 @@
+@use "sass:color";
+
+$mainColor: #1d39c4;
+$mainColor30: color.adjust($mainColor, $lightness: 30%);
+$mainColorMedium: #4f70c9;
+$mainColorLight: #f6f8fd;
+
+$fontBlack: #4a4a4a;
+$fontWhite: #ffffff;
+$fontBlueLight: #759aff;
+
+$cyanLight: #ebf9fa;
+$white: #ffffff;
+$black: #000000;
+$blackLight: #41474d;
+$grey: grey;
+$dimgrey: dimgrey;
+$lightgrey: lightgrey;
+$softgrey: rgb(0 0 0 / 30%);
+$greyExtraLight: #f7f8fb;
+$greyLight2: #c4c4c4;
+$greyLight: #e8e8e8;
+$greyMedium: rgb(206 209 212 / 75%);
+$greyDark: #596169;
+$greyExtraDark: #0a1c37;
+$greyblue: #bbc3ee;
+
+$blue: #00639a;
+$blueExtraLight: #eff3fb;
+$blueDark: #3750cb;
+$textExtraDark: #03148c;
+$cyan: #3dc3d2;
+$redLight: #e2284a;
+$red: #e50f26;
+$redLight: #e56d7a;
+$green: #48c27e;
+$greenDark: #36b37e;
+$greenLight: #b8e986;
+$yellow: #e3e05b;
+$yellowDark: #ffab00;
+$orange: #eeb413;
+$transparent: transparent;
+$black: #000000;
+
+$backgroundHover: rgb(0 0 0 / 5%);
+$greyBackground: #f6f8fd;
+
+$borderColor: rgb(0 0 0 / 10%);
+$blueBorderColor: #d4dcf2;
+$greyBorderColor: #ccd6f0;
+
+// Exam navbar colors
+$examNavbarDefaultColor: $greyLight2;
+$examNavbarBookmarkedColor: $yellowDark;
+$examNavbarCurrentColor: $mainColor;
+$examNavbarCompletedColor: $greenDark;
+$examNavbarVisitedColor: $mainColor30;
+
+// filters for png  images
+$filterWhite: invert(100%) sepia(0%) saturate(0%) hue-rotate(173deg)
+  brightness(103%) contrast(105%);
