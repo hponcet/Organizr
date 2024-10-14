@@ -3957,10 +3957,6 @@ function userMenu(user) {
   $("body").attr("data-active-user-group-name", user.data.user.group);
   $("body").attr("data-active-user-group-id", user.data.user.groupID);
 
-  localStorage.setItem("Auth_PlexToken", user.sso.myPlexAccessToken);
-  localStorage.setItem("Auth_email", user.user.email);
-  localStorage.setItem("Auth_role", user.user.groupID);
-
   var sideMenu = "";
   var menuList = "";
   var showDebug = activeInfo.settings.misc.debugArea
@@ -16856,51 +16852,12 @@ function launch() {
           version: json.data.version,
         };
 
-        console.log(
-          `
-            
-            
-            
-            
-            
-            
-            
-            
-            user:
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            `,
-          activeInfo,
-          `
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                `
+        window.localStorage.setItem(
+          "Auth_PlexToken",
+          json.data.sso.myPlexAccessToken
         );
+        window.localStorage.setItem("Auth_email", json.data.user.email);
+        window.localStorage.setItem("Auth_role", json.data.user.groupID);
 
         // Add element to signal activeInfo Ready
         $("#wrapper").after('<div id="activeInfo"></div>');
