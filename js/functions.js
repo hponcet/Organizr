@@ -3957,11 +3957,9 @@ function userMenu(user) {
   $("body").attr("data-active-user-group-name", user.data.user.group);
   $("body").attr("data-active-user-group-id", user.data.user.groupID);
 
-  console.log(user);
-
-  localStorage.setItem("Auth_PlexToken", user.data.user.groupID);
-  localStorage.setItem("Auth_email", user.data.user.groupID);
-  localStorage.setItem("Auth_role", user.data.user.groupID);
+  localStorage.setItem("Auth_PlexToken", user.sso.myPlexAccessToken);
+  localStorage.setItem("Auth_email", user.user.email);
+  localStorage.setItem("Auth_role", user.user.groupID);
 
   var sideMenu = "";
   var menuList = "";
